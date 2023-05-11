@@ -36,8 +36,10 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "antd": "^5.4.7",
     "axios": "^1.4.0",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+    "sass": "^1.62.1"
   }
 }

@@ -1,15 +1,23 @@
 import { Button, Input, Select } from 'antd'
 import React from 'react'
+import http from '../../utils/requestProject'
 
 const Layout = () => {
   const handleChange = (value) => {
     console.log(`selected ${value}`)
   }
 
+  const onClick = async () => {
+    const res = await http({
+      url: 'channelss',
+      method: 'get'
+    })
+    console.log(res)
+  }
   return (
     <div>
-      layout
-      <Button type='primary'>我是按钮</Button>
+      <h1>layout</h1>
+      <Button type='primary' onClick={onClick}>我是按钮</Button>
       <Input style={{ width: '240px' }} />
       <Select
         defaultValue="lucy"
