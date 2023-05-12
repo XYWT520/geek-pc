@@ -1,6 +1,7 @@
 import { Button, Input, Select } from 'antd'
 import React from 'react'
 import http from '../../utils/requestProject'
+import styles from './index.module.scss'
 
 const Layout = () => {
   const handleChange = (value) => {
@@ -15,7 +16,7 @@ const Layout = () => {
     console.log(res)
   }
   return (
-    <div>
+    <div className={styles.root}>
       <h1>layout</h1>
       <Button type='primary' onClick={onClick}>我是按钮</Button>
       <Input style={{ width: '240px' }} />

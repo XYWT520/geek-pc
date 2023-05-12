@@ -1,0 +1,12 @@
+.root {
+  color: red;
+  :global {
+    .h1 {
+      color: aqua;
+    }
+    .h2 {
+      font-size: 24px;
+      font-weight: 900;
+    }
+  }
+}

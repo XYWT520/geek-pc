@@ -1,0 +1,8 @@
+.root {
+  color: blue;
+  :global {
+    .ant-btn {
+      color: red;
+    }
+  }
+}

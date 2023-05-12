@@ -5,13 +5,17 @@ import NotFound from './pages/NotFound/NotFound'
 
 function App () {
   return (
-    <Router>
-      <Switch>
-        <Route path='/login' component={Login}></Route>
-        <Route path='/home' component={Layout}></Route>
-        <Route component={NotFound}></Route>
-      </Switch>
-    </Router>
+    <>
+      <Layout></Layout>
+      <Login></Login>
+      <Router>
+        <Switch>
+          <Route path='/login' component={Login}></Route>
+          <Route path='/home' component={Layout}></Route>
+          <Route component={NotFound}></Route>
+        </Switch>
+      </Router>
+    </>
   )
 }
 
