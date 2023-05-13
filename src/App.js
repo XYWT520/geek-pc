@@ -6,8 +6,6 @@ import NotFound from './pages/NotFound/NotFound'
 function App () {
   return (
     <>
-      <Layout></Layout>
-      <Login></Login>
       <Router>
         <Switch>
           <Route path='/login' component={Login}></Route>
