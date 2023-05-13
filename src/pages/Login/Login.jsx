@@ -24,7 +24,9 @@ const Login = () => {
       <div className='login'>
         <div className='login-name'></div>
         <div>
-          <Form autoComplete="off" onFinish={onFinish} validateTrigger={['onChange', 'onBlur']} >
+          <Form autoComplete="off" validateTrigger={['onChange', 'onBlur']} initialValues={{
+            userName: '18679861438'
+          }} onFinish={onFinish}>
             <Form.Item name='userName'
               rules={[
                 { required: true, message: '必填项' },
